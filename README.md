@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# Factorio Solar Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based calculator for determining optimal solar panel and accumulator ratios in Factorio.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This tool helps Factorio players calculate the optimal number of solar panels and accumulators needed for their factory's power requirements. Built with React, TypeScript, and Vite for a modern, responsive user experience.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Calculate optimal solar panel to accumulator ratios
+- Real-time power requirement calculations
+- Support for different factory sizes and power needs
+- Dark/light mode support
+- Responsive design for desktop and mobile use
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Enter your factory's power requirements in megawatts (MW)
+2. Adjust desired buffer capacity for night time operation
+3. View the recommended number of solar panels and accumulators
+4. Optional: Fine-tune the ratio based on your specific needs
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Development Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This project is built with:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- React 18 with TypeScript
+- Vite for build tooling
+- ESLint for code quality
+- Modern CSS with responsive design
+
+For development, you'll need Node.js and Yarn installed on your machine.
+
+## License
+
+This project is licensed under the MIT License.
